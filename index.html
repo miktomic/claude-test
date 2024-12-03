@@ -12,22 +12,70 @@
     </header>
     
     <main>
-        <h2>About This Page</h2>
-        <p>This is a simple HTML page that demonstrates basic structure and styling. It includes a header, main content area, and footer.</p>
+        <section class="about">
+            <h2>About This Page</h2>
+            <p>This is a simple HTML page that demonstrates basic structure and styling. It includes a header, main content area, and footer.</p>
+        </section>
         
-        <h2>Features</h2>
-        <ul>
-            <li>Clean and responsive design</li>
-            <li>Easy to read typography</li>
-            <li>Subtle color scheme</li>
-            <li>Simple navigation structure</li>
-        </ul>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Design</h3>
+                    <p>Custom website design tailored to your needs</p>
+                </div>
+                <div class="service-card">
+                    <h3>Development</h3>
+                    <p>Full-stack development solutions</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consulting</h3>
+                    <p>Expert technical consulting services</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <h3>Website Launch</h3>
+                <p>We're excited to announce the launch of our new website!</p>
+                <small>December 3, 2024</small>
+            </div>
+            <div class="news-item">
+                <h3>New Features</h3>
+                <p>Stay tuned for exciting new features coming soon.</p>
+                <small>December 1, 2024</small>
+            </div>
+        </section>
         
-        <h2>Sample Image</h2>
-        <img src="/api/placeholder/400/300" alt="placeholder image">
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
         <p>© 2024 Simple Page. All rights reserved.</p>
     </footer>
 </body>
